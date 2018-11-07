@@ -13,7 +13,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(kdl) {
-  var customerstr = "";
+  var custr = "";
   if(!kdl.length) {
     return "The line is currently empty.";
   }
@@ -22,12 +22,12 @@ function currentLine(kdl) {
       var nom = kdl[i];
       var ord = i + 1;
       if (i === kdl.length - 1) {
-        customerstr += (`${ord}. ${nom}`);
+        custr += (`${ord}. ${nom}`);
       }
       else {
-        customerstr += (`${ord}. ${nom}, `);
+        custr += (`${ord}. ${nom}, `);
       }
     }
   }
-  return "The line is currently: " + customerstr;
+  return "The line is currently: " + custr;
 }
