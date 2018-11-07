@@ -3,6 +3,15 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
+function tellWhere(name) {
+  for(i = 0; i<kdl.length; i++) {
+    if (kdl[i] === name) {
+      return i;
+    }
+    
+  }
+}
+
 function nowServing(katzDeliLine) {
   if (!katzDeliLine.length) {
    return "There is nobody waiting to be served!"; 
