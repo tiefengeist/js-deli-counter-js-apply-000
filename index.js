@@ -4,12 +4,12 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function tellWhere(name) {
-  for(i = 0; i<kdl.length; i++) {
-    if (kdl[i] === name) {
-      return i;
+  for(i = 0; i<katzDeliLine.length; i++) {
+    if (katzDeliLine[i] === name) {
+      return `You are number ${i+1} in line.`;
     }
-    if (!kdl.includes(name)) {
-      return 'Your name is not on the list.'
+    if (!katzDeliLine.includes(name)) {
+      return 'You don\'t seem to have taken a number.';
     }
   }
 }
