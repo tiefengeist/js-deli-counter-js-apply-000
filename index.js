@@ -42,5 +42,3 @@ function currentLine(kdl) {
   }
   return "The line is currently: " + custr;
 }
-
-takeANumber(katzDeliLine, Grace);
