@@ -3,7 +3,7 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
-function tellWhere(name) {
+function tellWhere(katzDeliLine, name) {
   for(i = 0; i<katzDeliLine.length; i++) {
     if (katzDeliLine[i] === name) {
       return `You are number ${i+1} in line.`;
