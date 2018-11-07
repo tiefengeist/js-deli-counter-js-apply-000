@@ -8,7 +8,9 @@ function tellWhere(name) {
     if (kdl[i] === name) {
       return i;
     }
-    
+    if (!kdl.includes(name)) {
+      return 'Your name is not on the list.'
+    }
   }
 }
 
