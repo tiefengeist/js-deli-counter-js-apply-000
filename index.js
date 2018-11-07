@@ -5,7 +5,7 @@ function takeANumber(katzDeliLine, name) {
 
 function tellWhere(katzDeliLine, name) {
   for(i = 0; i<katzDeliLine.length; i++) {
-    if (katzDeliLine[i] === name) {
+    if (katzDeliLine[i].toUpperCase() === name.toUpperCase()) {
       return `You are number ${i+1} in line.`;
     }
     if (!katzDeliLine.includes(name)) {
