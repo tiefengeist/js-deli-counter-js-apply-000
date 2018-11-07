@@ -16,7 +16,7 @@ function nowServing(katzDeliLine) {
 
 function currentLine(kdl) {
   var customerstr = "";
-  if(kdl.length === 0) {
+  if(!kdl.length) {
     return "The line is currently empty.";
   }
   else {
